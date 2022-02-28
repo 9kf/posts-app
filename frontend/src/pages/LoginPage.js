@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import { login, signup } from "../api/users";
 
+import Timer from "../components/Timer";
+
 const LoginPage = ({ authenticate }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -82,6 +84,7 @@ const LoginPage = ({ authenticate }) => {
         <button style={{ marginTop: "0.5rem" }} onClick={handleSignup}>
           Sign up
         </button>
+        <Timer />
       </form>
     </div>
   );
